@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('https://fonts.googleapis.com/css2? Family= Bebas+Neue & display=swap') format('woff2'),
+        url('https://fonts.googleapis.com/css2? Family= Bebas+Neue & display=swap') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: local('../vendor/fonts/Basis Grotesque Pro Regular'), local('BasisGrotesquePro-Regular'),
+        url('../vendor/fonts/BasisGrotesquePro-Regular.woff2') format('woff2'),
+        url('../vendor/fonts/BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */

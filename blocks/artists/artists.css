@@ -1,0 +1,45 @@
+.artists {
+    margin: 0;
+    padding: 0 60px 60px;
+    background-color: rgba(28,71,168, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.artists__description {
+    text-align: center;
+}
+
+.artists__carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    
+}
+.artist {
+    text-align: center;
+    transition: transform 1s ease-out;
+}
+
+.artist:hover {
+    text-align: center;
+    transform: scale(1.2);
+    
+}
+
+.artist__name {
+    margin-top: -40px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.artist__text {
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

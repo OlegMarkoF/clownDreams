@@ -1,0 +1,18 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/main/main.css);
+
+@import url(../blocks/hamburger/hamburger.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/main-page/main-page.css);
+@import url(../blocks/calendar/calendar.css);
+@import url(../blocks/main-content/main-content.css);
+@import url(../blocks/videos/videos.css);
+@import url(../blocks/artists/artists.css);
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/music/music.css);
+@import url(../blocks/rewiews/rewiews.css);
+@import url(../blocks/questions/questions.css);
+@import url(../blocks/footer/footer.css);

@@ -1,0 +1,41 @@
+.page {
+  background: #fff;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1280px;
+  /* position: relative; */
+  font-family: 'Bebas Neue', 'Arial', 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  overflow: hidden;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,29 @@
+.main-page {
+    margin: 0;
+    padding: 0;
+    background: url(../../images/Фон.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main-image {
+    margin: 0;
+    /* object-fit: cover; */
+    width: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

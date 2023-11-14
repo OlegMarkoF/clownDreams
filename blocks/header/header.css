@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  z-index: 5;
+}
+
+/* .header.hide {
+  transform: translateY(-60px);
+} */
+
+.menu-button {
+  margin: 0;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-button:hover {
+  transform: scale(1.05);
+}
+
+.button-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

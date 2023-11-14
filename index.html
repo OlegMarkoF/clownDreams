@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/style.css" />
+    <title>Сны Клоуна</title>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <nav class="button-group">
+          <a class="menu-button" href="#tickets">Купить билет</a>
+          <a class="menu-button" href="#calendar">Афиша</a>
+          <a class="menu-button" href="#gallery">Галерея</a>
+          <a class="menu-button" href="#rewiews">Отзывы</a>
+          <a class="menu-button" href="#">Подробности</a>
+        </nav>
+      </header>
+      <section class="main-page">
+        <div class="title">
+          <div class="logo">
+            <img
+              src="./images/Сны_Клоуна.png"
+              alt="Сны_Клоуна"
+              style="width: 100%"
+            />
+          </div>
+          <h1 class="main-text">
+            Театрализованное&nbsp;шоу для&nbsp;всей&nbsp;семьи
+          </h1>
+        </div>
+        <div class="main-image">
+          <img
+            src="./images/Клоун_в_облаках.png"
+            alt="Сны_Клоуна"
+            style="width: 100%"
+          />
+        </div>
+      </section>
+
+      <section class="calendar" id="calendar">
+        <div class="show-time">
+          <div class="date">
+            <h2 style="font-size: 70px;">24</h2>
+            <h3>декабря</h3>
+          </div>
+          <div class="time">
+            <p>12:00</p>
+            <p>ОДО</p>
+            <p>ул. Шостаковича 7</p>
+          </div>
+        </div>
+        <div class="countdown">
+          <p>До начала шоу осталось:</p>
+          <p id="t"></p>
+          <div class="days">
+            <p>дней</p>
+            <p>часов</p>
+            <p>минут</p>
+            <p>секунд</p>
+          </div>
+        </div>
+        <div class="buy-tickets__info">
+          <div class="palas">
+            <div class="calendar__logo">
+              <img
+                src="./images/Сны_Клоуна.png"
+                alt="Сны_Клоуна"
+                style="width: 100%"
+              />
+            </div>
+            <div class="adress">
+              <h2>Самара</h2>
+              <h2>Дом Офицеров</h2>
+              <p>ул. Шостаковича 7</p>
+            </div>
+          </div>
+          <div class="date-show">
+            <h3 class="day-show">24 Декабря в 12:00</h3>
+            <button class="buy-ticket">Купить билеты</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="main-content">
+        <section class="videos">
+          <div class="video__content">
+            <div class="video__description">
+              <p>
+                Волшебная невыдуманная история Главный герой ворчлив и недоволен
+                жизнью, но мечтает измениться… На пути к счастью он переживает
+                невероятные приключения в мире грёз и воображения!
+                Театрализованное шоу «Сны Клоуна» - это захватывающие трюки и
+                цирковые номера, яркие костюмы и оживающие декорации,
+                интерактивы с детьми и взрослыми, огромные движущиеся куклы
+                животных, шоу спецэффектов, гигантские воздушные шары и вы
+                вместе с главным персонажем в центре событий! Вы увидите сон, о
+                котором захочется рассказать!
+              </p>
+            </div>
+            <div class="video">
+              <video
+                src="https://disk.yandex.ru/i/30lVEvAc-51BLg"
+                controls
+                style="max-width: 700px; display: none"
+              ></video>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/wkzSDYrMuCM?si=iaPFYPS7406ircWd"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/AHK_c_8ijjc?si=dn0Uzxz6WmB1tQBS"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <video
+                src="https://disk.yandex.ru/i/zMpJPFphuxhalw"
+                controls
+                style="max-width: 700px; display: none"
+              ></video>
+            </div>
+          </div>
+          <p class="video__text">
+            Вы увидите сон, о котором захочется рассказать!
+          </p>
+        </section>
+        <section class="artists">
+          <p class="artists__description">
+            В шоу принимают участие более 20 артистов из разных городов Россиии
+            - танцоры, воздушные и художественные гимнасты, акробаты, роллеры,
+            ходулисты и клоуны.
+          </p>
+          <div class="artists__carousel">
+            <div class="artist">
+              <img
+                src="./images/carousel/Анастасия_Ермакова.png"
+                style="width: 100%"
+              />
+              <p class="artist__name">Анастасия Ермакова</p>
+              <p class="artist__text">
+                Член сборной России по дисциплине фристайл-слалом, многократный
+                призер Чемпионатов России по роллер спорту
+              </p>
+            </div>
+            <div class="artist">
+              <img
+                src="./images/carousel/Валерия_Власова.png"
+                style="width: 100%"
+              />
+              <p class="artist__name">Валерия Власова</p>
+              <p class="artist__text">
+                Двукратная чемпионка мира по воздушной гимнастике, многократная
+                победительница Всероссийских соревнований
+              </p>
+            </div>
+            <div class="artist">
+              <img
+                src="./images/carousel/Регина_Кудряшкина.png"
+                style="width: 100%"
+              />
+              <p class="artist__name">Регина Кудряшкина</p>
+              <p class="artist__text">
+                Мастер спорта по художественной гимнастике, многократный призёр
+                международных соревнований
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="gallery">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-19.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-27.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-37.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-40.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-43.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-46.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-48.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-52.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-10_21-35-55.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-11_02-36-07.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+                src="./images/gallery/photo_2023-11-11_02-36-12.jpg"
+                style="width: 100%; object-fit: cover"
+              />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </section>
+        <section class="music">
+          <p class="music__text">
+            Погружение в атмосферу волшебства создает чарующую музыку, которую
+            написал композитор Михаил Робканов, лауреат премии Los Angeles Movie
+            Awards.
+          </p>
+          <audio controls>
+            <source src="music.mp3" type="audio/mpeg" />
+            <source src="music.ogg" type="audio/ogg" />
+          </audio>
+        </section>
+        <section class="rewiews" id="rewiews">
+          <h2 class="rewiews__title">Отзывы</h2>
+          <div class="rewiews__content">
+            <div class="rewiew">
+              <img
+                src="./images/reviews/photo_2023-11-11_01-35-33.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <div class="rewiew">
+              <img
+                src="./images/reviews/photo_2023-11-11_01-43-57.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <div class="rewiew">
+              <img
+                src="./images/reviews/photo_2023-11-11_01-44-01.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <div class="rewiew">
+              <img
+                src="./images/reviews/photo_2023-11-11_01-44-05.jpg"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <h2 class="rewiews__title">Вопросы и ответы</h2>
+
+          <div class="wrapper center-block">
+            <div
+              class="panel-group"
+              id="accordion"
+              role="tablist"
+              aria-multiselectable="true"
+            >
+              <div class="panel panel-default">
+                <div class="panel-heading active" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                    Сколько длится шоу?
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="panel-collapse collapse in"
+                  role="tabpanel"
+                  aria-labelledby="headingOne"
+                >
+                  <div class="panel-body">
+                    Программа начинается с тематической интерактивной части в фойе,
+                которая длится 30 минут. Затем всех зрителей приглашают в
+                зрительный зал на представление. Общая продолжительность с
+                интерактивной частью 90 минут.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                    На какой возраст рассчитано шоу?
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingTwo"
+                >
+                  <div class="panel-body">
+                    Шоу для семейного просмотра с детьми любого возраста. Как и в
+                любом шоу будет громкая музыка, затемненные сцены и драматичные
+                моменты.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                    Можно ли пойти на шоу по одному билету с ребенком?
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingThree"
+                >
+                  <div class="panel-body">
+                    Дети до 3-х лет посещают шоу бесплатно без предоставления
+                отдельного места (на коленях у родителей). Если ребёнку больше
+                3-х лет, на него необходимо приобретать билет.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__box">
+            <button class="accordion">Сколько длится шоу?</button>
+            <div class="panel">
+              <p>
+                Программа начинается с тематической интерактивной части в фойе,
+                которая длится 30 минут. Затем всех зрителей приглашают в
+                зрительный зал на представление. Общая продолжительность с
+                интерактивной частью 90 минут.
+              </p>
+            </div>
+            <button class="accordion">На какой возраст рассчитано шоу?</button>
+            <div class="panel">
+              <p>
+                Шоу для семейного просмотра с детьми любого возраста. Как и в
+                любом шоу будет громкая музыка, затемненные сцены и драматичные
+                моменты.
+              </p>
+            </div>
+            <button class="accordion">
+              Можно ли пойти на шоу по одному билету с ребенком?
+            </button>
+            <div class="panel">
+              <p>
+                Дети до 3-х лет посещают шоу бесплатно без предоставления
+                отдельного места (на коленях у родителей). Если ребёнку больше
+                3-х лет, на него необходимо приобретать билет.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="tickets" id="tickets"></section>
+      </div>
+      <footer class="footer">
+        <div class="contacts">
+          <p>для партнеров и СМИ:</p>
+          <a class="mail" href="mailto:art-prince@yandex.ru"
+            >art-prince@yandex.ru</a
+          >
+        </div>
+        <div class="requisites">
+          <p>
+            2023. ИП Карачев Александр Николаевич ИНН 32526676785 ОГРНИП
+            323631200113088
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
