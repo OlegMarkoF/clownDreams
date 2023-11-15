@@ -9,6 +9,7 @@
 }
 
 .artists__description {
+    width: 80%;
     text-align: center;
 }
 
@@ -21,6 +22,7 @@
     
 }
 .artist {
+    max-width: 20%;
     text-align: center;
     transition: transform 1s ease-out;
 }

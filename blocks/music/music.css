@@ -9,3 +9,7 @@
     text-align: center;
     gap: 40px;
 }
+
+.music__text {
+    width: 80%;
+}

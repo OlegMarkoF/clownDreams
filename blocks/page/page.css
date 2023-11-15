@@ -18,9 +18,15 @@
     box-sizing: border-box;
 }
 
-p {
+p, i {
+  font-family: 'Arial';
   margin: 0;
   padding: 0;
+  /* font-weight: bold;
+  font-size: 50px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center; */
   color: white;
 }
 
@@ -32,6 +38,8 @@ a {
 }
 
 h1, h2, h3 {
+  /* font-family: Arial; */
+  /* font-family: 'Bebas Neue', 'Arial'; */
   margin: 0;
   padding: 0;
   color: white;

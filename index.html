@@ -9,6 +9,7 @@
   <body>
     <main class="page">
       <header class="header">
+        <button class="hamburger-menu"></button>
         <nav class="button-group">
           <a class="menu-button" href="#tickets">Купить билет</a>
           <a class="menu-button" href="#calendar">Афиша</a>
@@ -40,25 +41,35 @@
       </section>
 
       <section class="calendar" id="calendar">
-        <div class="show-time">
-          <div class="date">
-            <h2 style="font-size: 70px;">24</h2>
-            <h3>декабря</h3>
+        <div class="calendar__content">
+          <div class="show-time">
+            <div class="date">
+              <h2>24</h2>
+              <h3>декабря</h3>
+            </div>
+            <div class="time">
+              <p>12:00</p>
+              <p>ОДО</p>
+              <p style="letter-spacing: 0em; font-size: 18px; font-weight: 700;">ул. Шостаковича 7</p>
+            </div>
           </div>
-          <div class="time">
-            <p>12:00</p>
-            <p>ОДО</p>
-            <p>ул. Шостаковича 7</p>
-          </div>
-        </div>
-        <div class="countdown">
-          <p>До начала шоу осталось:</p>
-          <p id="t"></p>
-          <div class="days">
-            <p>дней</p>
-            <p>часов</p>
-            <p>минут</p>
-            <p>секунд</p>
+          <div class="countdown">
+            <p class="time-left">До начала шоу осталось:</p>
+            <div class="days">
+              <div class="flex-time">
+                <h2 id="d"></h2><p class="count">дней</p>
+              </div>
+              <div class="flex-time">
+                <h2 id="h"></h2><p class="count">часов</p>
+              </div>
+              <div class="flex-time">
+                <h2 id="m"></h2><p class="count">минут</p>
+              </div>
+              <div class="flex-time">
+                <h2 id="s"></h2><p class="count">секунд</p>
+              </div>
+              
+            </div>
           </div>
         </div>
         <div class="buy-tickets__info">
@@ -73,7 +84,7 @@
             <div class="adress">
               <h2>Самара</h2>
               <h2>Дом Офицеров</h2>
-              <p>ул. Шостаковича 7</p>
+              <p>ул.&nbsp;Шостаковича&nbsp;7</p>
             </div>
           </div>
           <div class="date-show">
@@ -81,16 +92,40 @@
             <button class="buy-ticket">Купить билеты</button>
           </div>
         </div>
+        <div class="date__prev">
+          <a onclick=""
+            ><img
+              src="./images/ссссс.png"
+              style="transform: rotate(180deg)"
+              alt="стрелка влево"
+          /></a>
+          <div class="date__text">
+            <h3>Вернуться</h3>
+            <h3>назад</h3>
+          </div>
+        </div>
+        <div class="date__next">
+          <div class="date__text">
+            <h3>Другая</h3>
+            <h3>дата</h3>
+          </div>
+          <a onclick=""
+            ><img src="./images/ссссс.png" alt="стрелка вправо"
+          /></a>
+        </div>
       </section>
 
       <div class="main-content">
         <section class="videos">
           <div class="video__content">
             <div class="video__description">
+              <i>Волшебная невыдуманная история</i>
               <p>
-                Волшебная невыдуманная история Главный герой ворчлив и недоволен
-                жизнью, но мечтает измениться… На пути к счастью он переживает
-                невероятные приключения в мире грёз и воображения!
+                Главный герой ворчлив и недоволен жизнью, но мечтает измениться…
+                На пути к счастью он переживает невероятные приключения в мире
+                грёз и воображения!
+              </p>
+              <p>
                 Театрализованное шоу «Сны Клоуна» - это захватывающие трюки и
                 цирковые номера, яркие костюмы и оживающие декорации,
                 интерактивы с детьми и взрослыми, огромные движущиеся куклы
@@ -100,14 +135,13 @@
               </p>
             </div>
             <div class="video">
-              <video
+              <!-- <video
                 src="https://disk.yandex.ru/i/30lVEvAc-51BLg"
                 controls
                 style="max-width: 700px; display: none"
-              ></video>
+              ></video> -->
               <iframe
-                width="560"
-                height="315"
+                width="100%"
                 src="https://www.youtube.com/embed/wkzSDYrMuCM?si=iaPFYPS7406ircWd"
                 title="YouTube video player"
                 frameborder="0"
@@ -115,25 +149,20 @@
                 allowfullscreen
               ></iframe>
               <iframe
-                width="560"
-                height="315"
+                width="100%"
                 src="https://www.youtube.com/embed/AHK_c_8ijjc?si=dn0Uzxz6WmB1tQBS"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
-              <video
-                src="https://disk.yandex.ru/i/zMpJPFphuxhalw"
-                controls
-                style="max-width: 700px; display: none"
-              ></video>
             </div>
           </div>
           <p class="video__text">
             Вы увидите сон, о котором захочется рассказать!
           </p>
         </section>
+
         <section class="artists">
           <p class="artists__description">
             В шоу принимают участие более 20 артистов из разных городов Россиии
@@ -184,14 +213,12 @@
                 style="width: 100%; object-fit: cover"
               />
             </div>
-
             <div class="mySlides fade">
               <img
                 src="./images/gallery/photo_2023-11-10_21-35-27.jpg"
                 style="width: 100%; object-fit: cover"
               />
             </div>
-
             <div class="mySlides fade">
               <img
                 src="./images/gallery/photo_2023-11-10_21-35-37.jpg"
@@ -247,8 +274,15 @@
               />
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)"
+              ><img
+                src="./images/ссссс.png"
+                style="transform: rotate(180deg)"
+                alt="стрелка влево"
+            /></a>
+            <a class="next" onclick="plusSlides(1)"
+              ><img src="./images/ссссс.png" alt="стрелка вправо"
+            /></a>
           </div>
         </section>
         <section class="music">
@@ -258,8 +292,20 @@
             Awards.
           </p>
           <audio controls>
-            <source src="music.mp3" type="audio/mpeg" />
-            <source src="music.ogg" type="audio/ogg" />
+            <source src="./images/audio/СныКлоуна_Феи.mp3" type="audio/mpeg" />
+            <!-- <source src="music.ogg" type="audio/ogg" /> --></audio
+          ><audio controls>
+            <source
+              src="./images/audio/СныКлоуна_Роллеры.mp3"
+              type="audio/mpeg"
+            />
+            <!-- <source src="music.ogg" type="audio/ogg" /> --></audio
+          ><audio controls>
+            <source
+              src="./images/audio/СныКлоуна_Пауки.mp3"
+              type="audio/mpeg"
+            />
+            <!-- <source src="music.ogg" type="audio/ogg" /> -->
           </audio>
         </section>
         <section class="rewiews" id="rewiews">
@@ -291,137 +337,60 @@
             </div>
           </div>
         </section>
+
         <section class="questions">
           <h2 class="rewiews__title">Вопросы и ответы</h2>
 
-          <div class="wrapper center-block">
-            <div
-              class="panel-group"
-              id="accordion"
-              role="tablist"
-              aria-multiselectable="true"
-            >
-              <div class="panel panel-default">
-                <div class="panel-heading active" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a
-                      role="button"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                    Сколько длится шоу?
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseOne"
-                  class="panel-collapse collapse in"
-                  role="tabpanel"
-                  aria-labelledby="headingOne"
-                >
-                  <div class="panel-body">
-                    Программа начинается с тематической интерактивной части в фойе,
-                которая длится 30 минут. Затем всех зрителей приглашают в
-                зрительный зал на представление. Общая продолжительность с
-                интерактивной частью 90 минут.
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a
-                      class="collapsed"
-                      role="button"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                    На какой возраст рассчитано шоу?
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="panel-collapse collapse"
-                  role="tabpanel"
-                  aria-labelledby="headingTwo"
-                >
-                  <div class="panel-body">
-                    Шоу для семейного просмотра с детьми любого возраста. Как и в
-                любом шоу будет громкая музыка, затемненные сцены и драматичные
-                моменты.
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title">
-                    <a
-                      class="collapsed"
-                      role="button"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                    Можно ли пойти на шоу по одному билету с ребенком?
-                    </a>
-                  </h4>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="panel-collapse collapse"
-                  role="tabpanel"
-                  aria-labelledby="headingThree"
-                >
-                  <div class="panel-body">
-                    Дети до 3-х лет посещают шоу бесплатно без предоставления
-                отдельного места (на коленях у родителей). Если ребёнку больше
-                3-х лет, на него необходимо приобретать билет.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="questions__box">
-            <button class="accordion">Сколько длится шоу?</button>
-            <div class="panel">
-              <p>
-                Программа начинается с тематической интерактивной части в фойе,
-                которая длится 30 минут. Затем всех зрителей приглашают в
-                зрительный зал на представление. Общая продолжительность с
-                интерактивной частью 90 минут.
-              </p>
+            <div class="accordion__block">
+              <button class="accordion">Сколько длится шоу?</button>
+              <div class="panel">
+                <p>
+                  Программа начинается с тематической интерактивной части в
+                  фойе, которая длится 30 минут. Затем всех зрителей приглашают
+                  в зрительный зал на представление. Общая продолжительность с
+                  интерактивной частью 90 минут.
+                </p>
+              </div>
             </div>
-            <button class="accordion">На какой возраст рассчитано шоу?</button>
-            <div class="panel">
-              <p>
-                Шоу для семейного просмотра с детьми любого возраста. Как и в
-                любом шоу будет громкая музыка, затемненные сцены и драматичные
-                моменты.
-              </p>
+            <div class="accordion__block">
+              <button class="accordion">
+                На какой возраст рассчитано шоу?
+              </button>
+              <div class="panel">
+                <p>
+                  Шоу для семейного просмотра с детьми любого возраста. Как и в
+                  любом шоу будет громкая музыка, затемненные сцены и
+                  драматичные моменты.
+                </p>
+              </div>
             </div>
-            <button class="accordion">
-              Можно ли пойти на шоу по одному билету с ребенком?
-            </button>
-            <div class="panel">
-              <p>
-                Дети до 3-х лет посещают шоу бесплатно без предоставления
-                отдельного места (на коленях у родителей). Если ребёнку больше
-                3-х лет, на него необходимо приобретать билет.
-              </p>
+            <div class="accordion__block">
+              <button class="accordion">
+                Можно ли пойти на шоу по одному билету с ребенком?
+              </button>
+              <div class="panel">
+                <p>
+                  Дети до 3-х лет посещают шоу бесплатно без предоставления
+                  отдельного места (на коленях у родителей). Если ребёнку больше
+                  3-х лет, на него необходимо приобретать билет.
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="tickets" id="tickets"></section>
+
+        <section class="tickets" id="tickets">
+          <div class="calendar__logo">
+            <img
+              src="./images/Сны_Клоуна.png"
+              alt="Сны_Клоуна"
+              style="width: 100%"
+            />
+          </div>
+          <button class="buy-ticket">Выбрать билет</button>
+
+        </section>
       </div>
       <footer class="footer">
         <div class="contacts">
@@ -437,6 +406,31 @@
           </p>
         </div>
       </footer>
+
+      <!-- Popup -->
+      <section class="hamburger">
+        <div class="hamburger__box">
+          <button class="hamburger-menu hamburger__close-menu"></button>
+          <nav class="hamburger__button__group">
+            <a class="service-button" href="#tickets">Купить билет</a>
+            <a class="service-button" href="#calendar">Афиша</a>
+            <a class="service-button" href="#gallery">Галерея</a>
+            <a class="service-button" href="#rewiews">Отзывы</a>
+            <a class="service-button" href="#">Подробности</a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Popup image -->
+      <section class="hamburger popup_image">
+        <figure class="popup__figure">
+          <button
+            class="popup__close popup__close_image"
+            type="button"
+          ></button>
+          <img class="popup__photo" src="#" alt="" />
+        </figure>
+      </section>
     </main>
     <script src="./scripts/app.js"></script>
   </body>

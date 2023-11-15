@@ -30,13 +30,14 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
 }
 
 .menu-button:hover {
   transform: scale(1.05);
+  background-color: rgba(255, 255, 255, .4);
 }
 
 .button-group {
@@ -45,5 +46,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
+
+@media screen and (max-width: 900px) {
+  .button-group {
+    display: none;
+  }
+  .header {
+    justify-content: flex-start;
+  }
+}  
