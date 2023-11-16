@@ -24,6 +24,7 @@ window.addEventListener("scroll", () => {
 const hamburger = document.querySelector(".hamburger");
 const openHamburgerButton = document.querySelector(".hamburger-menu");
 const closeHamburgerButton = document.querySelector(".hamburger__close-menu");
+const clickMenuButton = document.getElementsByClassName("service-button");
 
 const openHamburger = () => {
   hamburger.classList.add("hamburger_opened");
@@ -38,11 +39,21 @@ function closeHamburgerEsc(evt) {
     closeHamburger();
   }
 }
+function closeHamburgerClickButton(evt) {
+  if (evt.key === "click") {
+    closeHamburger();
+  }
+}
 
 function closeHamburgerOverlay(evt) {
   if (evt.target === evt.currentTarget) {
     closeHamburger();
   }
+}
+
+let n;
+for (n = 0; n < clickMenuButton.length; n++) {
+  clickMenuButton[n].addEventListener("click", closeHamburger);
 }
 
 // Oбратный отсчет
@@ -94,12 +105,10 @@ for (i = 0; i < acc.length; i++) {
 // слайдшоу
 let slideIndex = 1;
 showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
-
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
@@ -124,6 +133,8 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   // dots[slideIndex - 1].className += " active";
 }
+
+
 
 openHamburgerButton.addEventListener("click", openHamburger);
 closeHamburgerButton.addEventListener("click", closeHamburger);
