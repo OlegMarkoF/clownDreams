@@ -5,3 +5,9 @@
     background-attachment: fixed;
     background-position: left;
 }
+
+@media screen and (max-width: 900px) {
+    .main-content {
+        background: none;
+    }
+  }

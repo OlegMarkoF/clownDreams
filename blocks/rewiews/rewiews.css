@@ -21,3 +21,14 @@
 .rewiew {
   object-fit: cover;
 }
+
+@media screen and (max-width: 900px) {
+  .rewiews {
+    padding: 0 30px 30px;
+    background-color: rgba(28,71,168, 1);
+    gap: 20px;
+  }
+  .rewiews__content {
+    gap: 10px;
+  }
+}

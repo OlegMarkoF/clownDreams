@@ -98,3 +98,19 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .gallery {
+    background-color: rgba(28, 71, 168, 1);
+  }
+  .slideshow-container {
+    max-width: 100%;
+  }
+  .next {
+    right: 10px;
+    /* border-radius: 3px 0 0 3px; */
+  }
+  .prev {
+    left: 10px;
+  }
+}

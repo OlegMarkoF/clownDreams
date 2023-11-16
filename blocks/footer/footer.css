@@ -23,3 +23,9 @@
   opacity: .7;
   border-bottom: 2px solid rgba(255, 255, 255, .7);
 }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 30px;
+  }
+}
