@@ -1,11 +1,37 @@
-// логика скрытия хедера
+// Oбратный отсчет
+const count = document.querySelector(".count");
+// Установите дату, до которой мы ведем обратный отсчет
+let countDownDate = new Date("December 24, 2023 12:00:00").getTime(); // <-- Здесь пишем дату
+let x = setInterval(function () {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Выведите результат
+  document.getElementById("d").innerHTML = days;
+  document.getElementById("h").innerHTML = hours;
+  document.getElementById("m").innerHTML = minutes;
+  document.getElementById("s").innerHTML = seconds;
+  // Если обратный отсчет закончился, напишите какой-нибудь текст
+  if (distance < 0) {
+    let c;
+    for (c = 0; c < count.length; c++) {
+      count[c].classList.add("count__hidden");
+    }
+    clearInterval(x);
+    document.getElementById("t").innerHTML = "Мы готовим новое представление"; // <-- Здесь пишем текст.
+  }
+}, 1000);
+
+// логика скрытия хедера - если прогодится.
 let lastScroll = 0;
 const defaultOffset = 300;
 const header = document.querySelector("header");
 
 const containHide = () => header.classList.contains("hide");
-const scrollPosition = () =>
-  window.pageYOffset || document.documentElement.scrollTop;
+const scrollPosition = () => document.documentElement.scrollTop;
 
 window.addEventListener("scroll", () => {
   if (
@@ -19,7 +45,6 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = scrollPosition();
 });
-
 
 // Открытие/закрытие гамбургер меню
 const hamburger = document.querySelector(".hamburger");
@@ -55,37 +80,12 @@ for (n = 0; n < clickMenuButton.length; n++) {
 
 // увеличение фото при нажатии
 function zoomIn() {
+  let s;
   const image = document.getElementById("myImage");
-  image.style.width = "200%";
+  for (s = 0; s < image.length; s++) {
+    image[s].style.width = "200%";
   }
-
-// Oбратный отсчет
-const count = document.querySelector(".count");
-// Установите дату, до которой мы ведем обратный отсчет
-let countDownDate = new Date("December 24, 2022 12:00:00").getTime(); // <-- Здесь пишем дату
-let x = setInterval(function () {
-  let now = new Date().getTime();
-  let distance = countDownDate - now;
-  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  // Выведите результат
-  document.getElementById("d").innerHTML = days;
-  document.getElementById("h").innerHTML = hours;
-  document.getElementById("m").innerHTML = minutes;
-  document.getElementById("s").innerHTML = seconds;
-  // Если обратный отсчет закончился, напишите какой-нибудь текст
-  if (distance < 0) {
-    let c;
-    for (c = 0; c < count.length; c++) {
-      count[c].classList.add("count__hidden");
 }
-    clearInterval(x);
-    document.getElementById("t").innerHTML = "Мы готовим новое представление"; // <-- Здесь пишем текст.
-  }
-}, 1000);
-
 
 // вопросы и ответы
 let acc = document.getElementsByClassName("accordion");
@@ -102,7 +102,6 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
 
 // слайдшоу
 let slideIndex = 1;
