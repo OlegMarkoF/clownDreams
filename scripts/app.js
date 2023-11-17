@@ -132,6 +132,28 @@ function showSlides(n) {
   // dots[slideIndex - 1].className += " active";
 }
 
+
+// Увеличение отзывов и фото
+
+
+const modal = document.getElementById('myModal');
+
+const img = document.querySelectorAll('#myImg');
+const modalImg = document.getElementById("img01");
+let r;
+// const captionText = document.getElementById("caption");
+for (r = 0; r < img.length; r++) {
+img[r].onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    // captionText.innerHTML = this.alt;
+}
+}
+// const span = document.getElementsByClassName("close")[0];
+modal.onclick = function() {
+  modal.style.display = "none";
+}
+
 openHamburgerButton.addEventListener("click", openHamburger);
 closeHamburgerButton.addEventListener("click", closeHamburger);
 hamburger.addEventListener("click", closeHamburgerOverlay);

@@ -217,34 +217,34 @@
         <section class="gallery" id="gallery">
           <div class="slideshow-container">
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-19.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-19.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-27.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-27.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-37.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-37.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-40.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-40.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-43.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-43.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-46.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-46.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-48.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-48.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-52.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-52.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-10_21-35-55.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-10_21-35-55.jpg" />
             </div>
             <div class="mySlides fade">
-              <img src="./images/gallery/photo_2023-11-11_02-36-07.jpg" />
+              <img id="myImg" src="./images/gallery/photo_2023-11-11_02-36-07.jpg" />
             </div>
             <div class="mySlides fade">
               <img
@@ -290,30 +290,35 @@
           <h2 class="rewiews__title">Отзывы</h2>
           <div class="rewiews__content">
             <div class="rewiew">
-              <img id="myImage" onclick=zoomIn()
+              <img
+                id="myImg"
                 src="./images/reviews/photo_2023-11-11_01-35-33.jpg"
                 style="width: 100%"
               />
             </div>
             <div class="rewiew">
-              <img id="myImage" onclick=zoomIn()
+              <img
+                id="myImg"
                 src="./images/reviews/photo_2023-11-11_01-43-57.jpg"
                 style="width: 100%"
               />
             </div>
             <div class="rewiew">
-              <img id="myImage" onclick="zoomIn()"
-              src="./images/reviews/photo_2023-11-11_01-44-01.jpg"
+              <img
+                id="myImg"
+                src="./images/reviews/photo_2023-11-11_01-44-01.jpg"
                 style="width: 100%"
               />
             </div>
             <div class="rewiew">
-              <img id="myImage" onclick="zoomIn()"
+              <img
+                id="myImg"
                 src="./images/reviews/photo_2023-11-11_01-44-05.jpg"
                 style="width: 100%"
               />
             </div>
           </div>
+          
         </section>
         <section class="questions">
           <h2 class="rewiews__title">Вопросы и ответы</h2>
@@ -382,7 +387,15 @@
         </div>
       </footer>
 
-      <!-- Popup -->
+      <!-- Модальное окно -->
+      <div id="myModal" class="modal">
+        <!-- <span class="close">&times;</span> -->
+        <img class="modal-content" id="img01" />
+        <!-- Добавить подпись к фото -->
+        <!-- <div id="caption"></div> -->
+      </div>
+
+      <!-- Hamburger menu -->
       <section class="hamburger">
         <div class="hamburger__box">
           <button class="hamburger-menu hamburger__close-menu"></button>
@@ -394,17 +407,6 @@
             <a class="service-button" href="#">Подробности</a>
           </nav>
         </div>
-      </section>
-
-      <!-- Popup image -->
-      <section class="popup popup_image">
-        <figure class="popup__figure">
-          <button
-            class="popup__close popup__close_image"
-            type="button"
-          ></button>
-          <img class="popup__photo" src="#" alt="" />
-        </figure>
       </section>
     </main>
     <script src="./scripts/app.js"></script>

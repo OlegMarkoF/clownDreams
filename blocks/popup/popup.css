@@ -1,57 +1,74 @@
-.popup {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 0.5s, opacity 0.3s linear;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-
-}
-
-
-.popup__close {
-  margin: 0;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  background: url("../../../images/popup/Close_Icon.svg") center no-repeat;
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  border: none;
+#myImg {
+  border-radius: 5px;
   cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.popup__close:hover {
-  opacity: 0.6;
+#myImg:hover {opacity: 0.8;}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding: 50px 0;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
 }
 
-.popup__close_image {
-  top: -40px;
-  right: -40px;
+.modal-content {
+  margin: auto;
+  display: block;
+  /* width: 50%; */
+  height: 100%;
+  object-fit: contain;
+  /* max-width: 500px; */
+}
+
+/* #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+} */
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
   position: absolute;
+  top: 8%;
+  right: 5%;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 200;
+  transition: 0.3s;
 }
 
-.popup__figure {
-  margin: 0;
-  padding: 0;
-  position: relative;
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.popup__photo {
-  max-width: 75vw;
-  max-height: 75vh;
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+  }
 }
-
-.popup_image {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
