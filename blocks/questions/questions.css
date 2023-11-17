@@ -26,11 +26,18 @@
   transition: 0.4s;
   border-radius: 10px;
   font-family: 'Arial';
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
 }
 .accordion::after {
   content: '▼';
   float: right;
  }
+ 
+ .active::after {
+  content: '▲';
+}
 
 .accordion__block {
   display: flex;
@@ -43,6 +50,8 @@
   background-color: #ccc;
 }
 
+
+
 .panel {
   padding: 18px;
   display: none;
@@ -53,12 +62,15 @@
 }
 .panel p {
   color: black;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
 }
 
 @media screen and (max-width: 900px) {
   .questions {
     margin: 0;
-    padding: 0 30px 30px;
+    padding: 20px 30px 30px;
     background-color: rgba(28, 71, 168, 1);
 }
 }

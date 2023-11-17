@@ -59,7 +59,7 @@
             </div>
             <div class="countdown">
               <p class="time-left">До начала шоу осталось:</p>
-              <div class="days">
+              <div class="days" id="t">
                 <div class="flex-time">
                   <h2 id="d"></h2>
                   <p class="count">дней</p>
@@ -177,10 +177,9 @@
           </p>
           <div class="artists__carousel">
             <div class="artist">
-              <img
-                class="artist__img"
-                src="./images/carousel/Анастасия_Ермакова.png"
-              />
+              <div class="artist__photo">
+                <img src="./images/carousel/Анастасия_Ермакова.png" />
+              </div>
               <div class="artist__description">
                 <p class="artist__name">Анастасия Ермакова</p>
                 <p class="artist__text">
@@ -190,7 +189,9 @@
               </div>
             </div>
             <div class="artist">
-              <img src="./images/carousel/Валерия_Власова.png" />
+              <div class="artist__photo">
+                <img src="./images/carousel/Валерия_Власова.png" />
+              </div>
               <div class="artist__description">
                 <p class="artist__name">Валерия Власова</p>
                 <p class="artist__text">
@@ -200,7 +201,9 @@
               </div>
             </div>
             <div class="artist">
-              <img src="./images/carousel/Регина_Кудряшкина.png" />
+              <div class="artist__photo">
+                <img src="./images/carousel/Регина_Кудряшкина.png" />
+              </div>
               <div class="artist__description">
                 <p class="artist__name">Регина Кудряшкина</p>
                 <p class="artist__text">
@@ -214,54 +217,34 @@
         <section class="gallery" id="gallery">
           <div class="slideshow-container">
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-19.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-19.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-27.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-27.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-37.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-37.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-40.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-40.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-43.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-43.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-46.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-46.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-48.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-48.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-52.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-52.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-10_21-35-55.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-10_21-35-55.jpg" />
             </div>
             <div class="mySlides fade">
-              <img
-                src="./images/gallery/photo_2023-11-11_02-36-07.jpg"
-              />
+              <img src="./images/gallery/photo_2023-11-11_02-36-07.jpg" />
             </div>
             <div class="mySlides fade">
               <img
@@ -271,14 +254,14 @@
             </div>
           </div>
           <a class="prev" onclick="plusSlides(-1)"
-              ><img
-                src="./images/ссссс.png"
-                style="transform: rotate(180deg)"
-                alt="стрелка влево"
-            /></a>
-            <a class="next" onclick="plusSlides(1)"
-              ><img src="./images/ссссс.png" alt="стрелка вправо"
-            /></a>
+            ><img
+              src="./images/ссссс.png"
+              style="transform: rotate(180deg)"
+              alt="стрелка влево"
+          /></a>
+          <a class="next" onclick="plusSlides(1)"
+            ><img src="./images/ссссс.png" alt="стрелка вправо"
+          /></a>
         </section>
         <section class="music">
           <p class="music__text">
@@ -307,25 +290,25 @@
           <h2 class="rewiews__title">Отзывы</h2>
           <div class="rewiews__content">
             <div class="rewiew">
-              <img
+              <img id="myImage" onclick=zoomIn()
                 src="./images/reviews/photo_2023-11-11_01-35-33.jpg"
                 style="width: 100%"
               />
             </div>
             <div class="rewiew">
-              <img
+              <img id="myImage" onclick=zoomIn()
                 src="./images/reviews/photo_2023-11-11_01-43-57.jpg"
                 style="width: 100%"
               />
             </div>
             <div class="rewiew">
-              <img
-                src="./images/reviews/photo_2023-11-11_01-44-01.jpg"
+              <img id="myImage" onclick="zoomIn()"
+              src="./images/reviews/photo_2023-11-11_01-44-01.jpg"
                 style="width: 100%"
               />
             </div>
             <div class="rewiew">
-              <img
+              <img id="myImage" onclick="zoomIn()"
                 src="./images/reviews/photo_2023-11-11_01-44-05.jpg"
                 style="width: 100%"
               />

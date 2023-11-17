@@ -20,6 +20,7 @@ window.addEventListener("scroll", () => {
   lastScroll = scrollPosition();
 });
 
+
 // Открытие/закрытие гамбургер меню
 const hamburger = document.querySelector(".hamburger");
 const openHamburgerButton = document.querySelector(".hamburger-menu");
@@ -29,11 +30,9 @@ const clickMenuButton = document.getElementsByClassName("service-button");
 const openHamburger = () => {
   hamburger.classList.add("hamburger_opened");
 };
-
 const closeHamburger = () => {
   hamburger.classList.remove("hamburger_opened");
 };
-
 function closeHamburgerEsc(evt) {
   if (evt.key === "Escape") {
     closeHamburger();
@@ -44,49 +43,51 @@ function closeHamburgerClickButton(evt) {
     closeHamburger();
   }
 }
-
 function closeHamburgerOverlay(evt) {
   if (evt.target === evt.currentTarget) {
     closeHamburger();
   }
 }
-
 let n;
 for (n = 0; n < clickMenuButton.length; n++) {
   clickMenuButton[n].addEventListener("click", closeHamburger);
 }
 
+// увеличение фото при нажатии
+function zoomIn() {
+  const image = document.getElementById("myImage");
+  image.style.width = "200%";
+  }
+
 // Oбратный отсчет
+const count = document.querySelector(".count");
 // Установите дату, до которой мы ведем обратный отсчет
-let countDownDate = new Date("December 24, 2023 12:00:00").getTime();
-
-// Обновляйте обратный отсчет каждые 1 секунду
+let countDownDate = new Date("December 24, 2022 12:00:00").getTime(); // <-- Здесь пишем дату
 let x = setInterval(function () {
-  // Получить сегодняшнюю дату и время
   let now = new Date().getTime();
-  // Найдите расстояние между моментом сейчас и датой обратного отсчета
   let distance = countDownDate - now;
-
-  // Расчеты времени для дней, часов, минут и секунд
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
   // Выведите результат
   document.getElementById("d").innerHTML = days;
   document.getElementById("h").innerHTML = hours;
   document.getElementById("m").innerHTML = minutes;
   document.getElementById("s").innerHTML = seconds;
-
   // Если обратный отсчет закончился, напишите какой-нибудь текст
   if (distance < 0) {
+    let c;
+    for (c = 0; c < count.length; c++) {
+      count[c].classList.add("count__hidden");
+}
     clearInterval(x);
-    document.getElementById("t").innerHTML = "Мы готовим новое представление";
+    document.getElementById("t").innerHTML = "Мы готовим новое представление"; // <-- Здесь пишем текст.
   }
 }, 1000);
 
-// вопрос-ответ
+
+// вопросы и ответы
 let acc = document.getElementsByClassName("accordion");
 let i;
 
@@ -102,18 +103,16 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
 // слайдшоу
 let slideIndex = 1;
 showSlides(slideIndex);
-// Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -133,8 +132,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   // dots[slideIndex - 1].className += " active";
 }
-
-
 
 openHamburgerButton.addEventListener("click", openHamburger);
 closeHamburgerButton.addEventListener("click", closeHamburger);

@@ -1,5 +1,5 @@
 .calendar {
-  padding: 100px 0 40px;
+  padding: 100px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +46,17 @@
   border-right: 4px solid white;
 }
 
+#t {
+  padding-top: 10px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+}
+
 .flex-time {
   display: flex;
   flex-direction: column;
@@ -55,6 +66,10 @@
 .count {
   font-size: 18px;
   font-weight: 700;
+}
+
+.count__hidden {
+  display: none;
 }
 
 .date h3 {
@@ -275,10 +290,17 @@
     border-right: none;
     border-bottom: 4px solid white;
   }
+  .date h3 {
+    line-height: 35px;
+  }
   .time {
     padding-left: 0;
     align-items: center;
   }
+  .time p {
+    line-height: 35px;
+  }
+
   .countdown {
     margin-top: 0;
   }

@@ -1,9 +1,9 @@
 .main-content {
-    background: url(../../images/AK1A0457.jpg);
+    background: url(../../images/AK1A0457.jpg) 50%/cover;
     background-repeat: no-repeat;
-    background-size: 100%;
+    /* background-size: 100%; */
     background-attachment: fixed;
-    background-position: left;
+    /* background-position: right; */
 }
 
 @media screen and (max-width: 900px) {
