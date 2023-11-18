@@ -86,12 +86,18 @@
   transition: background-color 0.6s ease;
 } */
 
-.fade {
-  animation-name: fade;
+.slide {
+  animation-name: slide;
   animation-duration: 1.5s;
 }
 
-@keyframes fade {
+@keyframes slide {
+  /* 100% {
+    transform: translate(0, 0);
+  }
+  0% {
+    transform: translate(-100%, 0);
+  } */
   from {
     opacity: 0.4;
   }
