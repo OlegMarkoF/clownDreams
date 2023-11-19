@@ -46,6 +46,25 @@ window.addEventListener("scroll", () => {
   lastScroll = scrollPosition();
 });
 
+// замена фона кнопок меню
+const defaultButton = 200;
+const button = document.querySelectorAll(".menu-button");
+const containCreate = () => button.classList.contains("create");
+
+window.addEventListener("scroll", () => {
+  let b;
+  if (scrollPosition() > defaultButton) {
+    for (b = 0; b < button.length; b++) {
+      button[b].classList.add("create");
+    }
+  } else if (scrollPosition() < defaultButton) {
+    for (b = 0; b < button.length; b++) {
+    button[b].classList.remove("create");
+  }
+  }
+  lastScroll = scrollPosition();
+});
+
 // Открытие/закрытие гамбургер меню
 const hamburger = document.querySelector(".hamburger");
 const openHamburgerButton = document.querySelector(".hamburger-menu");

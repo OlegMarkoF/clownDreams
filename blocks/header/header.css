@@ -14,7 +14,7 @@
 }
 
 /* .header.hide {
-  transform: translateY(-60px);
+  transform: translateY(-80px);
 } */
 
 .menu-button {
@@ -35,9 +35,17 @@
   text-transform: uppercase;
 }
 
+.create {
+  background-color: rgba(128, 128, 128, 0.9);
+}
+.create:hover {
+  background-color: rgba(128, 128, 128, 1);
+}
+
 .menu-button:hover {
   transform: scale(1.05);
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(128, 128, 128, 1);
+  /* background-color: rgba(255, 255, 255, .4); */
 }
 
 .button-group {

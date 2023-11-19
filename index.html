@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Сны Клоуна</title>
   </head>
   <body>
@@ -11,7 +16,7 @@
       <header class="header">
         <button class="hamburger-menu"></button>
         <nav class="button-group">
-          <a class="menu-button" href="#tickets">Купить билет</a>
+          <a class="menu-button" href="#">Купить билет</a>
           <a class="menu-button" href="#calendar">Афиша</a>
           <a class="menu-button" href="#gallery">Галерея</a>
           <a class="menu-button" href="#rewiews">Отзывы</a>
@@ -169,14 +174,14 @@
           </p>
         </section>
 
-        <section class="artists">
+        <section class="artists mySwiper">
           <p class="artists__description">
             В шоу принимают участие более 20 артистов из разных городов Россиии
             - танцоры, воздушные и художественные гимнасты, акробаты, роллеры,
             ходулисты и клоуны.
           </p>
-          <div class="artists__carousel">
-            <div class="artist">
+          <div class="artists__carousel swiper-wrapper">
+            <div class="artist swiper-slide">
               <div class="artist__photo">
                 <img src="./images/carousel/Анастасия_Ермакова.png" />
               </div>
@@ -188,7 +193,7 @@
                 </p>
               </div>
             </div>
-            <div class="artist">
+            <div class="artist swiper-slide">
               <div class="artist__photo">
                 <img src="./images/carousel/Валерия_Власова.png" />
               </div>
@@ -200,7 +205,7 @@
                 </p>
               </div>
             </div>
-            <div class="artist">
+            <div class="artist swiper-slide">
               <div class="artist__photo">
                 <img src="./images/carousel/Регина_Кудряшкина.png" />
               </div>
@@ -212,8 +217,10 @@
                 </p>
               </div>
             </div>
+
           </div>
         </section>
+
         <section class="gallery" id="gallery">
           <div class="slideshow-container">
             <div class="mySlides slide">
@@ -293,6 +300,7 @@
             ><img src="./images/ссссс.png" alt="стрелка вправо"
           /></a>
         </section>
+
         <section class="music">
           <p class="music__text">
             Погружение в атмосферу волшебства создает чарующую музыку, которую
@@ -437,5 +445,26 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
   </body>
 </html>

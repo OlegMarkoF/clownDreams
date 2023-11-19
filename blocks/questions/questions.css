@@ -53,12 +53,10 @@
   background-color: #ccc;
 }
 
-
-
 .panel {
   padding: 18px;
   display: none;
-  background-color: rgb(240, 146, 204);
+  background-color: rgb(255, 255, 255, .9);
   border-radius: 10px;
   overflow: hidden;
   width: 100%;

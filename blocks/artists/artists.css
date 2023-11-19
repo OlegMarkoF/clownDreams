@@ -18,18 +18,17 @@
 
 .artists__carousel {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  gap: 50px;
 }
+
 .artist {
   max-width: 30%;
   text-align: center;
-  transition: transform 1s ease-out;
-  /* animation: horizont 11s linear infinite; */
-  
+  margin: 0 2em;
 }
+/* .artist:not(.swiper-slide-active) {
+  filter: blur(1px);
+} */
 .artist:nth-child(1) {
   animation-delay: calc(3s * -1);
 }
@@ -57,7 +56,7 @@
 .artist__description {
   padding: 15px;
   border-radius: 20px;
-  background: rgba(128, 128, 128, .5);
+  background: rgba(128, 128, 128, .75);
   position: relative;
 }
 
@@ -86,18 +85,3 @@
   }
 }
 
-/* 
-@keyframes horizont {
-  0% {
-    transform: translateX(100%) scale(.7);
-    opacity: .4;
-  }
-  50% {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    opacity: .4;
-    transform: translateX(-100%) scale(.7);
-  }
-} */
