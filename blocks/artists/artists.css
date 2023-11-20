@@ -22,13 +22,13 @@
 }
 
 .artist {
-  max-width: 30%;
+  max-width: 32%;
   text-align: center;
   margin: 0 2em;
 }
-/* .artist:not(.swiper-slide-active) {
-  filter: blur(1px);
-} */
+.artist:not(.swiper-slide-active) {
+  filter: blur(0);
+}
 .artist:nth-child(1) {
   animation-delay: calc(3s * -1);
 }
@@ -83,5 +83,22 @@
     background-color: rgba(28, 71, 168, 1);
     gap: 20px;
   }
+  .artist {
+    max-width: 40%;
+  }
 }
-
+@media screen and (max-width: 700px) {
+  .artist {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .artist {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .artist {
+    max-width: 90%;
+  }
+}
