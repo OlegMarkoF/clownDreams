@@ -11,27 +11,22 @@
 }
 
 .rewiews__content {
-  /* height: 500px; */
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   align-items: center;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   justify-content: flex-start;
-  
   background-size: cover;
-  /* overflow: hidden; */
   gap: 20px;
 }
 
 .rewiew {
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   width: 30%;
 }
 
 #myImg {
-  /* object-fit: cover; */
   width: 100%;
-  /* flex: 0 0 auto; */
 }
 
 .rewiew img:hover {

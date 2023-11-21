@@ -26,9 +26,7 @@
   text-align: center;
   margin: 0 2em;
 }
-.artist:not(.swiper-slide-active) {
-  filter: blur(0);
-}
+
 .artist:nth-child(1) {
   animation-delay: calc(3s * -1);
 }
