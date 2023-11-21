@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="./pages/style.css" />
     <link
       rel="stylesheet"
+      href="./blocks/baguetteBox/baguetteBox.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    
 
     <title>Сны Клоуна</title>
   </head>
@@ -217,79 +222,46 @@
                 </p>
               </div>
             </div>
-
           </div>
         </section>
 
         <section class="gallery" id="gallery">
-          <div class="slideshow-container">
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-19.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-27.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-37.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-40.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-43.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-46.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-48.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-52.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-10_21-35-55.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-11_02-36-07.jpg"
-              />
-            </div>
-            <div class="mySlides slide">
-              <img
-                id="myImg"
-                src="./images/gallery/photo_2023-11-11_02-36-12.jpg"
-              />
-            </div>
+          <div class="slideshow-container baguetteBoxTwo">
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-19.jpg" data-caption="">
+                <img src="./images/gallery/photo_2023-11-10_21-35-19.jpg" alt="1 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-27.jpg" data-caption="">
+                <img src="./images/gallery/photo_2023-11-10_21-35-27.jpg" alt="2 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-37.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-10_21-35-37.jpg" alt="3 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-46.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-10_21-35-46.jpg" alt="4 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-40.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-10_21-35-40.jpg" alt="5 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-43.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-10_21-35-43.jpg" alt="6 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-48.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-10_21-35-48.jpg" alt="7 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-52.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-10_21-35-52.jpg" alt="8 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-10_21-35-55.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-10_21-35-55.jpg" alt="9 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-11_02-36-07.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-11_02-36-07.jpg" alt="10 image">
+            </a>
+            <a class="mySlides slide" href="./images/gallery/photo_2023-11-11_02-36-12.jpg" data-caption="">
+              <img src="./images/gallery/photo_2023-11-11_02-36-12.jpg" alt="11 image">
+            </a>
           </div>
+  
           <a class="prev" onclick="plusSlides(-1)"
             ><img
               src="./images/ссссс.png"
@@ -325,31 +297,20 @@
         </section>
         <section class="rewiews" id="rewiews">
           <h2 class="rewiews__title">Отзывы</h2>
-          <div class="rewiews__content">
-            <div class="rewiew">
-              <img
-                id="myImg"
-                src="./images/reviews/photo_2023-11-11_01-35-33.jpg"
-              />
-            </div>
-            <div class="rewiew">
-              <img
-                id="myImg"
-                src="./images/reviews/photo_2023-11-11_01-43-57.jpg"
-              />
-            </div>
-            <div class="rewiew">
-              <img
-                id="myImg"
-                src="./images/reviews/photo_2023-11-11_01-44-01.jpg"
-              />
-            </div>
-            <div class="rewiew">
-              <img
-                id="myImg"
-                src="./images/reviews/photo_2023-11-11_01-44-05.jpg"
-              />
-            </div>
+          <div class="rewiews__content baguetteBoxTwo">
+            <a class="rewiew" href="./images/reviews/photo_2023-11-11_01-35-33.jpg" data-caption="">
+              <img id="myImg" src="./images/reviews/photo_2023-11-11_01-35-33.jpg" alt="1 image">
+            </a>
+            <a class="rewiew" href="./images/reviews/photo_2023-11-11_01-43-57.jpg" data-caption="">
+              <img id="myImg" src="./images/reviews/photo_2023-11-11_01-43-57.jpg" alt="1 image">
+            </a>
+            <a class="rewiew" href="./images/reviews/photo_2023-11-11_01-44-01.jpg" data-caption="">
+              <img id="myImg" src="./images/reviews/photo_2023-11-11_01-44-01.jpg" alt="1 image">
+            </a>
+            <a class="rewiew" href="./images/reviews/photo_2023-11-11_01-44-05.jpg" data-caption="">
+              <img id="myImg" src="./images/reviews/photo_2023-11-11_01-44-05.jpg" alt="1 image">
+            </a>
+            
           </div>
         </section>
         <section class="questions">
@@ -421,7 +382,9 @@
 
       <!-- Модальное окно -->
       <div id="myModal" class="modal">
-        <img class="modal-content" id="img01" />
+        <!-- <div style="width: 100%;"> -->
+        <img class="modal-content" id="img01" src="" alt="" />
+        <!-- </div>> -->
         <!-- <span class="close">&times;</span>  <- добавить крестик для закрытия модального окна -->
         <!-- <div id="caption"></div>  <- добавить подпись к фото -->
       </div>
@@ -446,25 +409,27 @@
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script
+      src="./scripts/baguetteBox.min.js"
+      async
+    ></script>
   </body>
 </html>

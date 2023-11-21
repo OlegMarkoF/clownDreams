@@ -107,10 +107,10 @@
 }
 
 @media screen and (max-width: 900px) {
-  .gallery {
+  /* .gallery {
     padding-top: 30px;
     background-color: rgba(28, 71, 168, 1);
-  }
+  } */
   .slideshow-container {
     max-width: 100%;
   }
