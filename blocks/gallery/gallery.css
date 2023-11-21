@@ -107,18 +107,23 @@
 }
 
 @media screen and (max-width: 900px) {
-  /* .gallery {
+  .gallery {
     padding-top: 30px;
     background-color: rgba(28, 71, 168, 1);
-  } */
+  }
   .slideshow-container {
     max-width: 100%;
   }
+  .next img,
+  .prev img {
+    height: 70px;
+    padding: 0 20px;
+  }
   .next {
-    right: 10px;
+    right: 0;
     /* border-radius: 3px 0 0 3px; */
   }
   .prev {
-    left: 10px;
+    left: 0;
   }
 }
