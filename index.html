@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="./images/Клоун_в_облаках.png" type="image/x-icon"> -->
     <link rel="stylesheet" href="./pages/style.css" />
     <link rel="stylesheet" href="./blocks/baguetteBox/baguetteBox.min.css" />
     <link
@@ -48,19 +49,57 @@
       <div class="main-content">
         <section class="calendar" id="calendar">
           <div class="calendar__content">
-            <div class="show-time">
-              <div class="date">
-                <h2>24</h2>
-                <h3>декабря</h3>
+            <div id="calendar__slider">
+
+              <div class="show-time">
+                <div class="date">
+                  <h2>10</h2>
+                  <h3>марта</h3>
+                </div>
+                
+                <div class="time">
+                  <p>12:00</p>
+                  <p>КРЦ Звезда</p>
+                  <p
+                    style="letter-spacing: 0em; font-size: 18px; font-weight: 700"
+                  >
+                  ул. Ново-Садовая 106г
+                  </p>
+                </div>
               </div>
-              <div class="time">
-                <p>12:00</p>
-                <p>ОДО</p>
-                <p
-                  style="letter-spacing: 0em; font-size: 18px; font-weight: 700"
-                >
-                  ул. Шостаковича 7
-                </p>
+              
+              <div class="show-time">
+                <div class="date">
+                  <h2>15</h2>
+                  <h3>апреля</h3>
+                </div>
+                
+                <div class="time">
+                  <p>12:30</p>
+                  <p>ОДО</p>
+                  <p
+                    style="letter-spacing: 0em; font-size: 18px; font-weight: 700"
+                  >
+                  ул. Зеленая 3
+                  </p>
+                </div>
+              </div>
+              
+              <div class="show-time">
+                <div class="date">
+                  <h2>24</h2>
+                  <h3>августа</h3>
+                </div>
+                
+                <div class="time">
+                  <p>10:00</p>
+                  <p>КРЦ Звезда</p>
+                  <p
+                    style="letter-spacing: 0em; font-size: 18px; font-weight: 700"
+                  >
+                  ул. Ново-Вокзальная 101
+                  </p>
+                </div>
               </div>
             </div>
             <div class="countdown">
@@ -96,18 +135,17 @@
               </div>
               <div class="adress">
                 <h2>Самара</h2>
-                <h2>Дом Офицеров</h2>
-                <p>ул.&nbsp;Шостаковича&nbsp;7</p>
+                <h2>КРЦ Звезда</h2>
+                <p>ул.&nbsp;Ново-Садовая&nbsp;106г</p>
               </div>
             </div>
             <div class="date-show">
-              <h3 class="day-show">24 Декабря в 12:00</h3>
+              <h3 class="day-show">10 Марта в 12:00</h3>
               <button class="buy-ticket">Купить билеты</button>
             </div>
           </div>
           <div class="date__prev">
-            <a onclick=""
-              ><img
+            <a><img
                 src="./images/ссссс.png"
                 style="transform: rotate(180deg)"
                 alt="стрелка влево"
@@ -122,8 +160,7 @@
               <h3>Другая</h3>
               <h3>дата</h3>
             </div>
-            <a onclick=""
-              ><img src="./images/ссссс.png" alt="стрелка вправо"
+            <a><img src="./images/ссссс.png" alt="стрелка вправо"
             /></a>
           </div>
         </section>
@@ -572,10 +609,10 @@
         },
       });
       let swiper2 = new Swiper(".mySwiper2", {
-      watchSlidesProgress: true,
-      slidesPerView: 3.2,
-    });
-      </script>
+        watchSlidesProgress: true,
+        slidesPerView: 3.2,
+      });
+    </script>
     <script src="./scripts/baguetteBox.min.js" async></script>
   </body>
 </html>

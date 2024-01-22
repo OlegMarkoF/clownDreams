@@ -23,6 +23,10 @@
   /* overflow: hidden; */
 }
 
+.swiper-slide:not(.swiper-slide-active) {
+  filter: blur(1px);
+}
+
 .artist {
   max-width: 32%;
   text-align: center;
