@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 1;
 }
 
 .title {
@@ -20,15 +19,15 @@
   top: 20%;
   left: 5%;
   gap: 40px;
-  z-index: 2;
 }
 
 .main-image {
   margin: 0;
   margin-bottom: -20%;
   width: 120%;
-  
+  z-index: 1;
 }
+
 
 .main-text {
   width: 100%;

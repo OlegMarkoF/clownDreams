@@ -6,7 +6,6 @@
   justify-content: center;
   background-color: rgba(28, 71, 168, 0.75);
   position: relative;
-  z-index: 0;
 }
 
 .calendar__content {
@@ -222,6 +221,7 @@
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.1em;
+  z-index: 10;
 }
 
 .buy-ticket:hover {
@@ -313,11 +313,10 @@
     font-weight: 300;
     line-height: 60px;
   }
-  .date__next {
-    top: 60px;
+  .date__next,
+  .date__prev
+   {
+    top: 145px;
   }
 
-  .date__prev {
-    top: 60px;
-  }
 }
