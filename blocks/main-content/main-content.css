@@ -1,8 +1,9 @@
 .main-content {
-    background: url(../../images/AK1A0457.jpg) 50%/cover;
+    /* background: url(../../images/AK1A0457.jpg) 50%/cover;
     background-repeat: no-repeat;
-    /* background-size: 100%; */
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    max-width: 1280px;
+    width: 100%;
     /* background-position: right; */
 }
 
